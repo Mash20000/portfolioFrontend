@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /checkout
+Disallow: /order/
+
+# After deployment, replace with your real domain. The sitemap is generated dynamically by the API
+# (GET /sitemap.xml on the server). Either proxy it from your domain or point to the API URL.
+Sitemap: https://YOUR-DOMAIN/sitemap.xml
