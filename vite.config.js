@@ -10,8 +10,8 @@ export default defineConfig({
     // Forwards /api calls to the Express server. With VITE_API_URL=/api, a phone (or anyone) opening the
     // site through ONE tunnel to port 5173 reaches the API too: no second tunnel, no CORS.
     proxy: {
-      "/api": { target: "http://localhost:5000", changeOrigin: true },
-      "/sitemap.xml": { target: "http://localhost:5000", changeOrigin: true },
+      "/api": { target: "https://portfoliobackend-w310.onrender.com", changeOrigin: true },
+      "/sitemap.xml": { target: "https://portfoliobackend-w310.onrender.com", changeOrigin: true },
     },
   },
   build: {
